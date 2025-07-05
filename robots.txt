@@ -1,0 +1,57 @@
+# robots.txt for reklik.net
+# Last updated: 2025-07-05
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.zip$
+Disallow: /*.gz$
+Disallow: /*.pdf$
+Disallow: /search
+Disallow: /?s=
+Disallow: /*?s=
+Disallow: /*&s=
+
+# Sitemap location
+Sitemap: https://reklik.net/sitemap.xml
+
+# Crawl-delay: 10  # Uncomment if you want to limit crawl rate (requests per second)
+
+# Allow all bots to access these file types
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+Allow: /*.eot$
+
+# Block specific bots if needed
+# User-agent: BadBot
+# Disallow: /
+
+# Allow Google Image and Video bots
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+# Allow Bing Image and Video bots
+User-agent: bingbot
+Allow: /
+
+User-agent: msnbot-media
+Allow: /
